@@ -9,3 +9,4 @@ python-multipart
 requests
 uvicorn
 sqlalchemy
+psycopg2-binary
