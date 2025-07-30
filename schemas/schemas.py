@@ -12,7 +12,7 @@ class TodoUpdate(BaseModel):
     completed: bool = False
     
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class TodoCreate(TodoBase):
     pass
@@ -22,7 +22,7 @@ class Todo(TodoBase):
     owner_id: int
     
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class UserBase(BaseModel):
     username: str
@@ -36,7 +36,7 @@ class User(UserBase):
     is_active: bool
     
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class Token(BaseModel):
     access_token: str
