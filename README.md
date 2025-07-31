@@ -177,7 +177,7 @@ todo-app/
 ## Deployment
 
 For production deployment, consider:
-- Using PostgreSQL instead of SQLite
+- Using PostgreSQL
 - Setting up proper HTTPS
 - Using environment variables for secrets
 - Containerizing with Docker
